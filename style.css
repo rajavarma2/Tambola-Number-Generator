@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+.btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-size: 18px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+#currentNumber {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #00ffcc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.marked {
+  background: #00ffcc;
+  color: #000;
+  transform: scale(1.1);
+}
+
+#completedMsg {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffcc;
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  font-size: 14px;
+  color: #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
